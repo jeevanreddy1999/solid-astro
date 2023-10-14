@@ -1,1 +1,1 @@
-# solid-astro-counter
+solid-astro-counter

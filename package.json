@@ -10,14 +10,18 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "db:push": "drizzle-kit push:mysql",
+    "db:gen": "drizzle-kit generate:mysql --schema=./src/db/schema.ts --out=./src/db/migrations"
   },
   "dependencies": {
     "@astrojs/solid-js": "^3.0.2",
     "@astrojs/tailwind": "^5.0.2",
+    "@planetscale/database": "^1.11.0",
     "astro": "^3.3.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "drizzle-orm": "^0.28.6",
     "lucide-solid": "^0.287.0",
     "solid-js": "^1.8.1",
     "tailwind-merge": "^1.14.0",
@@ -26,6 +30,8 @@
   "devDependencies": {
     "@types/node": "^20.8.6",
     "autoprefixer": "^10.4.16",
+    "dotenv": "^16.3.1",
+    "drizzle-kit": "^0.19.13",
     "postcss": "^8.4.31"
   }
 }

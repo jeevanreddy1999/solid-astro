@@ -10,6 +10,7 @@
       "@stores/*": ["src/stores/*"],
       "@lib/*": ["src/lib/*"]
     },
-    "noUnusedLocals": true
+    "noUnusedLocals": true,
+    "target": "ESNext"
   }
 }

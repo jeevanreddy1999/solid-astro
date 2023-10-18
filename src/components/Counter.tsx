@@ -7,7 +7,6 @@ import { Plus, Minus } from "lucide-solid";
 export default function Counter() {
   const { increment, decrement } = createCounter();
 
-  console.log("Counter initiated");
   return (
     <div class="flex items-center gap-4">
       <Button variant="destructive" onClick={decrement}>
